@@ -69,6 +69,7 @@
     <img src="/images/a7.png" alt="" width="800" height="500">
 
 - **Tạo Internet gateway**:
+
     <img src="/images/a8.png" alt="" width="800" height="300">
 
     <img src="/images/a9.png" alt="" width="800" height="250">
@@ -138,7 +139,7 @@
     <img src="/images/a27.png" alt="" width="800" height="500">
 
     <img src="/images/a28.png" alt="" width="800" height="500">
-    
+
     - Từ con public-instance có thể ssh vào con private-instance
 - Ping từ private instance ra internet
     - Từ con private-instance có thể ping tới gg => có thể kết nối ra internet
