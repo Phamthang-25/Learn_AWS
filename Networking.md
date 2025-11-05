@@ -55,51 +55,90 @@
 
 ## Lab 2: Tạo VPC và các thành phần (thực tế sẽ không tạo từng bước!)
 - **Tạo VPC**:
+
     <img src="/images/a3.png" alt="" width="800" height="500">
+
 - **Tạo subnets**:
+
     <img src="/images/a4.png" alt="" width="800" height="500">
+
     <img src="/images/a5.png" alt="" width="800" height="500">
+
     <img src="/images/a6.png" alt="" width="800" height="500">
+
     <img src="/images/a7.png" alt="" width="800" height="500">
+
 - **Tạo Internet gateway**:
     <img src="/images/a8.png" alt="" width="800" height="300">
+
     <img src="/images/a9.png" alt="" width="800" height="250">
+
 - **Tạo NAT gateway**:
+
     <img src="/images/a10.png" alt="" width="800" height="500">
+
 - **Tạo routetable (public và private)**:
     - **Public**:
+
         <img src="/images/a11.png" alt="" width="800" height="400">
+
         - Edit route:
+
             <img src="/images/a12.png" alt="" width="800" height="250">
+
         - Edit subnet associations:
+
             <img src="/images/a13.png" alt="" width="800" height="350">
+
     - **Private**:
+
         <img src="/images/a14.png" alt="" width="800" height="400">
+
         - Edit route:
+
             <img src="/images/a15.png" alt="" width="800" height="250">
+
         - Edit subnet associations:
+
             <img src="/images/a16.png" alt="" width="800" height="350">
+
 - Tạo **VPC Endpoint** for S3, Cấu hình route table private đi ra S3 Endpoint
+
     <img src="/images/a17.png" alt="" width="1000" height="500">
+
     <img src="/images/a18.png" alt="" width="1000" height="500">
+
     <img src="/images/a19.png" alt="" width="1000" height="500">
+
 - Tạo **Security group** cho các nhóm instance:
+
     <img src="/images/a20.png" alt="" width="1000" height="500">
+
     <img src="/images/a21.png" alt="" width="1000" height="500">
+
     <img src="/images/a22.png" alt="" width="1000" height="500">
+
     <img src="/images/a23.png" alt="" width="1000" height="500">
 
 ## Lab 2 (Bonus): Tạo VPC all-in-one-step
 
 ## Lab 3: Test connection trên VPC vừa tạo
 - Tạo 1 instance trong Public subnet, gán bastion-sg, thử kết nối
+
     <img src="/images/a24.png" alt="" width="800" height="500">
+
     <img src="/images/a25.png" alt="" width="800" height="500">
+
 - Gán Elastic IP cho Instance, thử kết nối qua Elastic IP
+
     <img src="/images/a26.png" alt="" width="800" height="500">
+
 - Tạo 1 instance trong Private subnet, gán app-sg, thử kết nối từ bastion
+
     <img src="/images/a27.png" alt="" width="800" height="500">
+
     <img src="/images/a28.png" alt="" width="800" height="500">
+    
     - Từ con public-instance có thể ssh vào con private-instance
 - Ping từ private instance ra internet
     - Từ con private-instance có thể ping tới gg => có thể kết nối ra internet
